@@ -31,20 +31,33 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .heading {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 60px;
 }
 
-/* ! Maybe move to other file */
+button {
+    border-radius: 50px;
+    width: 200px;
+    background-color: var(--limeGreenColor);
+    color: black;
+    padding: 15px 20px 15px 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--primaryFont);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 
+/* Navbar */
 .navbar {
     background-color: var(--backgroundColor);
     color: #fff;
@@ -54,6 +67,7 @@ body {
     font-family: var(--primaryFont);
     padding-left: 120px;
     padding-right: 120px;
+    margin-top: 10px;
 }
 
 .navbar-brand {
@@ -63,7 +77,7 @@ body {
 }
 
 .navbar-brand > .title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: var(--secondaryFont);
 }
   
@@ -74,9 +88,9 @@ body {
     align-items: center;
 }
 
-.navbar-items li {
-    margin-left: 1.5rem;
-    cursor: pointer;
+.navbar-items > li {
+    margin-left: 1.4rem;
+    cursor: pointer!important;
 }
 
 .navbar-items li:first-child {
@@ -88,24 +102,100 @@ body {
     width: 100px;
     background-color: var(--limeGreenColor);
     color: black;
-    padding: 15px 20px 15px 20px;
+    padding: 12px 20px 12px 20px;
     font-weight: 600;
     text-align: center;
 }
+
+/* HERO */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hero-image > img {
+    width: 100%;
+    object-fit:contain;
+    height: 500px;
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 200px;
+}
+
+/* Optionally, you can style the text */
+.overlay h1 {
+    text-transform: uppercase;
+    font-family: var(--secondaryFont);
+    text-align: start;
+}
+
+/* get-to-know-us */
+.get-to-know-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin: 20px;
+    margin-top: 35px;
+}
+  
+.get-to-know-us > .first-div {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    row-gap: 20px;
+}
+
+.get-to-know-us-text { 
+    color: white;
+    text-rendering: geometricPrecision;
+    line-height: 20px;
+    word-spacing: 1px;
+}
+
+.get-to-know-us > div > h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-family: var(--secondaryFont);
+    text-align: left;
+}
+
+.get-to-know-us > div > img {
+    height: 420px;
+    border-radius: 30px;
+}
+
 
 /* Stats */
 .stats {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     column-gap: 50px;
     border-radius: 30px;
     border: 1px solid var(--limeGreenColor);
-    padding: 10px;
+    padding: 14px;
     color: white;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .stats > div > span {
@@ -118,7 +208,7 @@ body {
     column-gap: 30px;
     row-gap: 20px;
     flex-wrap: wrap;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     font-family: var(--secondaryFont);
     color: var(--limeGreenColor);
@@ -139,7 +229,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     height: 150px;
-    width: 280px;
+    width: 230px;
     border: 2px solid var(--purpleColor);
     border-radius: 30px;
     background-color: var(--backgroundColor);

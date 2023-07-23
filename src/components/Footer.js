@@ -12,7 +12,7 @@ const Footer = () => {
 
                 <div>
                     <address>Islamabad, Pakistan 44000</address>
-                    <phone>Phone: +(92) 317-5384929</phone>
+                    <>Phone: +(92) 317-5384929</>
                 </div>
             </div>
             <div className='copyright'>&copy; 2023 theinsanestudios.com</div>

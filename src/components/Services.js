@@ -31,7 +31,7 @@ const Services = () =>{
         <div id="our-services">
             <h1 className="heading">Our Services</h1>
             <div className="services">
-                { serviceData.map(service => <Service service={service} />) }
+                { serviceData.map((service, index) => <Service key={`${service}-${index}`} service={service} />) }
             </div>
         </div>
     )

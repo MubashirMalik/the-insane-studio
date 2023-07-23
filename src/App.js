@@ -3,6 +3,8 @@ import Stats from "./components/Stats";
 import Services from "./components/Services.js";
 import Footer from "./components/Footer";
 import Team from "./components/Team";
+import Hero from "./components/Hero";
+import GetToKnowUs from "./components/GetToKnowUs";
 
 function App() {
 
@@ -13,8 +15,10 @@ function App() {
             <Navbar 
                 
             />
+            <Hero />
             <div className="wrapper">
                 <Stats />
+                <GetToKnowUs />
                 <Services />
                 <Team />
             </div>
