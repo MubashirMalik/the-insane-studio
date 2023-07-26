@@ -44,6 +44,7 @@ const Testimonials = () => {
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 </p>
+                <h3>Ammar Haider</h3>
             </div>
             <img src={image01} />
         </SwiperSlide>
@@ -57,6 +58,7 @@ const Testimonials = () => {
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 </p>
+                <h3>Ali</h3>
             </div>
             <img src={image02} />
         </SwiperSlide>
@@ -70,6 +72,7 @@ const Testimonials = () => {
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 </p>
+                <h3>Ammar</h3>
             </div>
             <img src={image01} />
         </SwiperSlide>
@@ -83,6 +86,7 @@ const Testimonials = () => {
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 </p>
+                <h3>Ali</h3>
             </div>
             <img src={image02} />
         </SwiperSlide>
@@ -96,6 +100,7 @@ const Testimonials = () => {
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 </p>
+                <h3>Ammar</h3>
             </div>
             <img src={image01} />
         </SwiperSlide>
@@ -109,6 +114,7 @@ const Testimonials = () => {
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 </p>
+                <h3>Ali</h3>
             </div>
             <img src={image02} />
         </SwiperSlide>

@@ -20,11 +20,12 @@ function App() {
             />
             {/* <Hero /> */}
             <div className="wrapper">
-                <Services />
-                {/* <Stats />
                 <GetToKnowUs />
-                
+                <Services />
                 <Testimonials />
+                {/* <Stats />
+                
+                
                 <Team /> */}
             </div>
             <Footer />

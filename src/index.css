@@ -16,7 +16,8 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--backgroundColor);
+    /* background-color: var(--backgroundColor); */
+    background-image: url('./assets/images/Background.jpg');
 }
 
 .ff-secondary {
@@ -330,10 +331,12 @@ padding-bottom: 50px;
 background-position: center;
 background-size: cover;
 background-color: black;
-width: 800px !important;
-height: 450px !important;
+width: 90% !important;
+height: 370px !important;
 display: flex !important;
-border-radius: 20px;
+border-radius: 25px;
+padding-left: 5%;
+overflow: hidden;
 }
 
 .swiper-slide img {
@@ -342,11 +345,16 @@ position: relative;
 }
 .swiper-slide p{
     color:white;
+    margin:0px
 }
 
 .swiper-slide h1{
     width: 50%;
     color:var(--limeGreenColor);
+}
+
+.swiper-slide h3{
+    color:white;
 }
 
 .swiper-slide div{
@@ -436,8 +444,16 @@ position: relative;
         height: 100px;
     }
 
+    .get-to-know-us{    
+        column-gap: 0px;
+    }
+
     .get-to-know-us > div > img{
         display: none
+    }
+
+    .get-to-know-us > .first-div{
+        width: 90%;
     }
 
     footer > .email {
@@ -455,5 +471,14 @@ position: relative;
         display: -webkit-box;
         -webkit-line-clamp: 15; 
         -webkit-box-orient: vertical;
+    }
+
+    .heading{
+        margin-top:10px;
+        margin-bottom: 40px;
+    }
+
+    .swiper-slide img{
+        display:none
     }
 }
