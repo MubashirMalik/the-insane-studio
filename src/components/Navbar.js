@@ -1,9 +1,9 @@
 import logo from '../assets/images/logo.png'
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
+    const [toggleState, setToggleState] = useState(false)
     const dropdownRef = useRef()
-    const togglebtnRef = useRef()
 
     const scrollTo = id => {
         const section = document.getElementById( id );
@@ -11,17 +11,15 @@ const Navbar = () => {
     }
 
     const toggled = () => {
+        setToggleState(prevToggleState => !prevToggleState)
         dropdownRef.current.classList.toggle('open')
-        const isOpen = dropdownRef.current.classList.contains('open')
-
-        togglebtnRef.current.className = isOpen? 'fa-solid fa-xmark': 'fa-solid fa-bars'
     }
-    
+
     return (
         <>
             <div className="navbar">
                 <div className="navbar-brand">
-                    <img src={logo} alt="the insane studio" width={50} height={50}/>
+                    <img src={logo} alt="the insane studio" width={40} height={40}/>
                     <div className='title'>INSANE STUDIOS</div>
                 </div>
 
@@ -33,7 +31,7 @@ const Navbar = () => {
                     <li className="last">Lets Talk</li>
                 </ul>
                 <div className='toggle-btn' onClick={() => toggled()}>
-                    <i className="fa-solid fa-bars"   ref={togglebtnRef}></i>
+                    <i className={`fa-solid fa-${toggleState ? 'xmark' : 'bars'}`}></i>
                 </div>
             </div>
             <div className='dropdown-menu' ref={dropdownRef}>

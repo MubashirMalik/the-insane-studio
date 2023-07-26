@@ -12,7 +12,7 @@ import image01 from "../assets/images/Ammar.png"
 import image02 from "../assets/images/Ali.png"
 
 // import required modules
-import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import { EffectCoverflow } from 'swiper/modules';
 
 const Testimonials = () => {
   return (
@@ -31,10 +31,7 @@ const Testimonials = () => {
             slideShadows: true,
         }}
         loop={true}
-        autoplay={{
-            delay:1000
-        }}
-        modules={[EffectCoverflow, Autoplay]}
+        modules={[EffectCoverflow]}
         className="mySwiper"
         >
         <SwiperSlide style={{display:'flex'}}>

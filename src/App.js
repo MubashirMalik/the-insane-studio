@@ -6,7 +6,6 @@ import Team from "./components/Team";
 import Hero from "./components/Hero";
 import GetToKnowUs from "./components/GetToKnowUs";
 import Testimonials from "./components/Testimonials";
-// import 'font-awesome/css/font-awesome.min.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
 
@@ -19,13 +18,14 @@ function App() {
             <Navbar 
                 
             />
-            <Hero />
+            {/* <Hero /> */}
             <div className="wrapper">
-                <Stats />
-                <GetToKnowUs />
                 <Services />
+                {/* <Stats />
+                <GetToKnowUs />
+                
                 <Testimonials />
-                <Team />
+                <Team /> */}
             </div>
             <Footer />
         </div>
