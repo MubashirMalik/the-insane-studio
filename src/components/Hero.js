@@ -12,7 +12,7 @@ const Hero = () => {
             />
             <div className="overlay">
                 <h1 className="heading">Let us shape your<br/> digital success story!</h1>
-                <button className="buttin">Explore Works</button>
+                <button className="button">Explore Works</button>
             </div>
         </div>
     )

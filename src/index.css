@@ -6,7 +6,7 @@
     --secondaryFont: 'Exo 2';
     --limeGreenColor: #8ffd2a;
     --purpleColor: #982afd;
-    --backgroundColor: rgb(33, 31, 34);
+    --backgroundColor: rgb(33, 31, 34) !important;
 }
 
 body {
@@ -76,6 +76,13 @@ button {
     column-gap: 10px;
 }
 
+.navbar .toggle-btn{
+    color:#fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
 .navbar-brand > .title {
     font-size: 1.4rem;
     font-family: var(--secondaryFont);
@@ -126,7 +133,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -137,6 +144,7 @@ button {
 
 /* Optionally, you can style the text */
 .overlay h1 {
+
     text-transform: uppercase;
     font-family: var(--secondaryFont);
     text-align: start;
@@ -310,4 +318,133 @@ footer > .contact-info {
     margin-top: 20px;
     margin-bottom: 20px;
     column-gap: 40px;
+}
+
+.swiper {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+background-color: black;
+width: 800px !important;
+height: 450px !important;
+display: flex !important;
+border-radius: 20px;
+}
+
+.swiper-slide img {
+display: block;
+position: relative;
+}
+.swiper-slide p{
+    color:white;
+}
+
+.swiper-slide h1{
+    width: 50%;
+    color:var(--limeGreenColor);
+}
+
+.swiper-slide div{
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0px;
+    /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu li:last-child {
+    border-radius: 50px;
+    background-color: var(--limeGreenColor);
+    color: black;
+    padding: 12px 20px 12px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media(max-width: 992px) {
+    .navbar-items{
+        display: none;
+    }
+
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+
+    .service{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer > .email {
+        font-size: 30px;
+    }
+
+    .get-in-touch{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:450px) {
+    .team-card{
+        width: 45%;
+        height: 250px;
+        margin-top: 10px ;
+    }
+
+    .outer-shadow-box{
+        height: 120px;
+    }
+    .service{
+        font-size: large;
+        width: 150px;
+        height: 100px;
+    }
+
+    .get-to-know-us > div > img{
+        display: none
+    }
+
+    .get-to-know-us-text{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 300px; 
+        display: -webkit-box;
+        -webkit-line-clamp: 15; 
+        -webkit-box-orient: vertical;
+    }
 }

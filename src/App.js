@@ -5,6 +5,10 @@ import Footer from "./components/Footer";
 import Team from "./components/Team";
 import Hero from "./components/Hero";
 import GetToKnowUs from "./components/GetToKnowUs";
+import Testimonials from "./components/Testimonials";
+// import 'font-awesome/css/font-awesome.min.css';
+import '@fortawesome/fontawesome-free/js/all.js';
+
 
 function App() {
 
@@ -20,6 +24,7 @@ function App() {
                 <Stats />
                 <GetToKnowUs />
                 <Services />
+                <Testimonials />
                 <Team />
             </div>
             <Footer />
