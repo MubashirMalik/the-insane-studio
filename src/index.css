@@ -44,6 +44,13 @@ body {
     margin-bottom: 60px;
 }
 
+.different-heading{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px; 
+}
+
 button {
     border-radius: 50px;
     width: 200px;
@@ -403,6 +410,14 @@ position: relative;
 
 /* Responsive Design */
 @media(max-width: 992px) {
+    .overlay{
+        padding-left: 100px;
+    }
+
+    .different-heading{
+        font-size: 30px;
+    }
+
     .navbar-items{
         display: none;
     }
@@ -413,6 +428,7 @@ position: relative;
 
     .dropdown-menu{
         display: block;
+        z-index:1;
     }
 
     .service{
@@ -536,9 +552,21 @@ position: relative;
         margin-top: 30px;
         margin-bottom: 30px;
     }
+  }
 
-    .overlay-text {
-        width: 80%;
-      }
+  @media (max-width: 525px) {
+    .overlay{
+        padding-left: 50px;
+    }
+
+    .overlay button {
+        font-size:10px;
+        padding:5px 7px;
+        width:150px;
+    }
+
+    .different-heading{
+        font-size:20px
+    }
   }
   

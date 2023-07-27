@@ -18,7 +18,7 @@ function App() {
             <Navbar 
                 
             />
-            {/* <Hero /> */}
+            <Hero />
             <div className="wrapper">
                 <Stats />
                 <GetToKnowUs />

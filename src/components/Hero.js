@@ -11,7 +11,7 @@ const Hero = () => {
                 alt="the-insane-studio hero-image"
             />
             <div className="overlay">
-                <h1 className="heading">Let us shape your<br/> digital success story!</h1>
+                <h1 className="different-heading">Let us shape your<br/> digital success story!</h1>
                 <button className="button">Explore Works</button>
             </div>
         </div>
