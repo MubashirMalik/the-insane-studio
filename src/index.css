@@ -164,7 +164,7 @@ button {
 .get-to-know-us > .first-div {
     display: flex;
     flex-direction: column;
-    width: 58%;
+    width: 100%;
     row-gap: 20px;
 }
 
@@ -424,6 +424,14 @@ position: relative;
         font-size: 30px;
     }
 
+    .get-to-know-us > div > img{
+        display: none
+    }
+
+    .get-to-know-us{    
+        column-gap: 0px;
+    }
+
     .get-in-touch{
         font-size: 25px;
     }
@@ -442,14 +450,6 @@ position: relative;
         font-size: large;
         width: 180px;
         height: 100px;
-    }
-
-    .get-to-know-us{    
-        column-gap: 0px;
-    }
-
-    .get-to-know-us > div > img{
-        display: none
     }
 
     .get-to-know-us > .first-div{
@@ -532,5 +532,9 @@ position: relative;
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
+    .overlay-text {
+        width: 80%;
+      }
   }
   
