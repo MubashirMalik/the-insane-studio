@@ -120,13 +120,13 @@ button {
 .hero-image {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    position: relative;
 }
 
 .hero-image > img {
     width: 100%;
     object-fit:contain;
-    height: 500px;
+    margin-top: 50px;
 }
 
 /* Overlay styles */
@@ -516,6 +516,10 @@ position: relative;
   
   /* Responsive styles for mobile view */
   @media (max-width: 767px) {
+    .dropdown-menu{
+        z-index: 1;
+    }
+
     .container {
         flex-direction: column;
     }
