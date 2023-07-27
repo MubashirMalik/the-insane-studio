@@ -287,14 +287,15 @@ footer > .contact-info {
 .team { 
     display: flex;
     flex-wrap: wrap;
-    column-gap: 18px;
+    column-gap: 15px;
+    row-gap: 15px;
     justify-content: center;
 }
 
 .team-card {
     position: relative;
     height: 280px;
-    width: 18%;
+    width: 235px;
 }
 
 .team-card > .circle {
@@ -430,7 +431,6 @@ position: relative;
 
 @media (max-width:450px) {
     .team-card{
-        width: 45%;
         height: 250px;
         margin-top: 10px ;
     }

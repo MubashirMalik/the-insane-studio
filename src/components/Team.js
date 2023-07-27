@@ -1,5 +1,6 @@
 import image01 from "../assets/images/Ammar.png"
 import image02 from "../assets/images/Ali.png"
+import image03 from "../assets/images/DSC03970.png"
 
 const TeamCard = ({ imageSrc, altText }) => {
 
@@ -26,17 +27,9 @@ const Team = () => {
             altText: "ali-the-insane-studio"
         },
         {
-            imageSrc: image01,
-            altText: "ammar-haider-the-insane-studio"
+            imageSrc: image03,
+            altText: "the-third-guy-the-insane-studio"
         }, 
-        {
-            imageSrc: image01,
-            altText: "ammar-haider-the-insane-studio"
-        }, 
-        {
-            imageSrc: image01,
-            altText: "ammar-haider-the-insane-studio"
-        },  
     ]
 
     return(

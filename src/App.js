@@ -23,10 +23,10 @@ function App() {
                 <GetToKnowUs />
                 <Services />
                 <Testimonials />
-                {/* <Stats />
+                {/* <Stats />*/}
                 
                 
-                <Team /> */}
+                <Team /> 
             </div>
             <Footer />
         </div>
