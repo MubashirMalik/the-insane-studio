@@ -20,10 +20,10 @@ function App() {
             />
             {/* <Hero /> */}
             <div className="wrapper">
+                <Stats />
                 <GetToKnowUs />
                 <Services />
                 <Testimonials />
-                {/* <Stats />*/}
                 
                 
                 <Team /> 
