@@ -15,7 +15,30 @@ import image02 from "../assets/images/Ali.png"
 import { EffectCoverflow } from 'swiper/modules';
 
 const Testimonials = () => {
-  return (
+
+    const testimonials = [
+        {
+            message: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem`,
+            by: 'Ammar Haider',
+            imageSrc: image01
+        },
+        {
+            message: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem`,
+            by: 'Ali',
+            imageSrc: image02
+        },
+    ]
+
+
+    return (
     <>
         <h1 className="heading">Client Testimonials</h1>
         <Swiper
@@ -34,90 +57,19 @@ const Testimonials = () => {
         modules={[EffectCoverflow]}
         className="mySwiper"
         >
-        <SwiperSlide style={{display:'flex'}}>
-            <div>
-                <h1>Testimonials</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-                <h3>Ammar Haider</h3>
-            </div>
-            <img src={image01} />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <h1>Testimonials</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-                <h3>Ali</h3>
-            </div>
-            <img src={image02} />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <h1>Testimonials</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-                <h3>Ammar</h3>
-            </div>
-            <img src={image01} />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <h1>Testimonials</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-                <h3>Ali</h3>
-            </div>
-            <img src={image02} />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <h1>Testimonials</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-                <h3>Ammar</h3>
-            </div>
-            <img src={image01} />
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <h1>Testimonials</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-                <h3>Ali</h3>
-            </div>
-            <img src={image02} />
-        </SwiperSlide>
+            
+            {
+                testimonials.map(testimonial => 
+                    <SwiperSlide style={{display:'flex'}}>
+                        <div>
+                            <h1>Testimonials</h1>
+                            <p>{ testimonial.message }</p>
+                            <h3>{ testimonial.by }</h3>
+                        </div>
+                        <img src={testimonial.imageSrc} alt="the-insane-studio testimonials" />
+                    </SwiperSlide>
+                )
+            }
         </Swiper>
     </>
   )
