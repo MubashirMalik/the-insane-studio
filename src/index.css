@@ -40,8 +40,8 @@ body {
     color: white;
     font-size: 40px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .different-heading{
@@ -134,7 +134,7 @@ button {
 .hero-image > img {
     width: 100%;
     object-fit:cover;
-    margin-top: 50px;
+    margin-top: 18px;
 }
 
 /* Overlay styles */
@@ -166,7 +166,7 @@ button {
     justify-content: center;
     column-gap: 50px;
     margin: 20px;
-    margin-top: 35px;
+    margin-top: 4%;
 }
   
 .get-to-know-us > .first-div {
@@ -195,28 +195,6 @@ button {
 .get-to-know-us > div > img {
     height: 420px;
     border-radius: 30px;
-}
-
-
-/* Stats */
-.stats {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 600;
-    column-gap: 50px;
-    border-radius: 30px;
-    border: 1px solid var(--limeGreenColor);
-    padding: 14px;
-    color: white;
-    margin-top: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.stats > div > span {
-    margin-right: 20px;
 }
 
 /* Services */
@@ -501,7 +479,7 @@ position: relative;
 }
 
 .container {
-    margin-top: 5%;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,7 +4,7 @@ const GetToKnowUs = () => {
 
 
     return (
-        <div className="get-to-know-us">
+        <div className="get-to-know-us" id="about-me">
             <div className="first-div">
                 <h1 className="heading">Get To Know About Us Closer</h1>
                 <div className="get-to-know-us-text">
