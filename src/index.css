@@ -125,6 +125,7 @@ button {
 /* HERO */
 
 .hero-image {
+    height: 500px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -132,7 +133,7 @@ button {
 
 .hero-image > img {
     width: 100%;
-    object-fit:contain;
+    object-fit:cover;
     margin-top: 50px;
 }
 
