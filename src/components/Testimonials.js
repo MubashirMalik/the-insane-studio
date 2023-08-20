@@ -59,8 +59,8 @@ const Testimonials = () => {
         >
             
             {
-                testimonials.map(testimonial => 
-                    <SwiperSlide style={{display:'flex'}}>
+                testimonials.map((testimonial, index) => 
+                    <SwiperSlide key={`team-member-${index+1}`}>
                         <div>
                             <h1>Testimonials</h1>
                             <p>{ testimonial.message }</p>

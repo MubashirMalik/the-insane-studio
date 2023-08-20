@@ -1,5 +1,5 @@
 import logo from '../assets/images/logo.png'
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 const Navbar = () => {
     const [toggleState, setToggleState] = useState(false)
@@ -25,7 +25,7 @@ const Navbar = () => {
 
                 <ul className="navbar-items">
                     <li>Home</li>
-                    <li>About Me</li>
+                    <li onClick={() => scrollTo("about-me")}>About Me</li>
                     <li onClick={() => scrollTo("our-services")}>Our Services</li>
                     <li>My Work</li>
                     <li className="last">Lets Talk</li>
@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
             <div className='dropdown-menu' ref={dropdownRef}>
                 <li>Home</li>
-                <li>About Me</li>
+                <li onClick={() => scrollTo("about-me")}>About Me</li>
                 <li onClick={() => scrollTo("our-services")}>Our Services</li>
                 <li>My Work</li>
                 <li className="last">Lets Talk</li>

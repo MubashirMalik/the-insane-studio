@@ -36,7 +36,7 @@ const Team = () => {
         <div>
             <h1 className="heading">Meet Our Team</h1>
             <div className="team">
-                { team.map(member => <TeamCard {...member} />) }
+                { team.map((member, index) => <TeamCard {...member} key={`team-member-${index+1}`} />) }
             </div>
         </div>
         
