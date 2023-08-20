@@ -47,8 +47,9 @@ body {
 .different-heading{
     color: white;
     font-size: 40px;
-    text-align: center;
+    text-align: left;
     margin-top: 50px; 
+    text-transform: uppercase;
 }
 
 button {
@@ -67,7 +68,8 @@ button {
 
 /* Navbar */
 .navbar {
-    background-color: var(--backgroundColor);
+    /* background-color: var(--backgroundColor); */
+    background-color: black;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -128,6 +130,19 @@ button {
     height: 500px;
     display: flex;
     justify-content: center;
+    padding-top: 50px
+}
+
+.hero-heading {
+    width: 40%;
+    height: 500px;
+}
+
+.hero-video {
+    width: 40%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -531,8 +546,62 @@ position: relative;
     margin: 0 20px;
   }
   
+  .play-pause-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-pause-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid white;
+  margin-right: 10px;
+}
+
+.playing .play-pause-button::before {
+  border-left: none;
+  border-right: 20px solid white;
+  margin-right: 0;
+}
+
+.play-pause-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
   /* Responsive styles for mobile view */
   @media (max-width: 767px) {
+    .stats{
+        font-size: 17px;
+    }
+
+    .hero-image{
+        height: 250px;
+    }
+
+    .hero-video{
+        display: none;
+    }
+
+    .hero-heading{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .dropdown-menu{
         z-index: 1;
     }
@@ -556,6 +625,11 @@ position: relative;
   }
 
   @media (max-width: 525px) {
+    .stats{
+        font-size: 10px;
+    }
+
+
     .overlay{
         padding-left: 50px;
     }
