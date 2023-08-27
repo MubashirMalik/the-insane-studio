@@ -6,31 +6,25 @@ import Team from "./components/Team";
 import Hero from "./components/Hero";
 import GetToKnowUs from "./components/GetToKnowUs";
 import Testimonials from "./components/Testimonials";
-import '@fortawesome/fontawesome-free/js/all.js';
-
-
+import "@fortawesome/fontawesome-free/js/all.js";
+import TestimonialsCarousel from "./components/TestimonialsCarousel/TestimonialsCarousel";
+import { testimonials } from "./components/TestimonialsCarousel/Content";
 function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <div className="wrapper">
+        <Stats />
+        <GetToKnowUs />
+        <Services />
+        <TestimonialsCarousel items={testimonials} />
 
-    
-
-    return (
-        <div className="App">
-            <Navbar 
-                
-            />
-            <Hero />
-            <div className="wrapper">
-                <Stats />
-                <GetToKnowUs />
-                <Services />
-                <Testimonials />
-                
-                
-                <Team /> 
-            </div>
-            <Footer />
-        </div>
-    );
+        <Team />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
