@@ -77,7 +77,6 @@ button {
     font-family: var(--primaryFont);
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 10px;
 }
 
 .navbar-brand {
