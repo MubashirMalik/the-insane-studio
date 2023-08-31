@@ -15,11 +15,10 @@ function App() {
       <Hero />
       <div className="wrapper">
         <Stats />
-        <GetToKnowUs />
         <Services />
         <TestimonialsCarousel items={testimonials} />
-
         <Team />
+        <GetToKnowUs />
       </div>
       <Footer />
     </div>
