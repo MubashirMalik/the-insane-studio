@@ -4,7 +4,7 @@ const Testimonial = ({ item }) => {
     <div style={{ borderRadius: 50, backgroundColor: "black", padding: 50 }}>
       <div style={{ padding: 10, display: "flex" }}>
         <img
-          style={{ borderRadius: 50, border: "4px solid #8ffd2a" }}
+          style={{ borderRadius: 50, border: "4px solid #8ffd2a",  objectFit: "cover" }}
           src={item.imageSrc}
           alt="the-insane-studio testimonials"
           width="60px"

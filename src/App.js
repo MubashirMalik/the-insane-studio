@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Team from "./components/Team";
 import Hero from "./components/Hero";
 import GetToKnowUs from "./components/GetToKnowUs";
-import Testimonials from "./components/Testimonials";
 import "@fortawesome/fontawesome-free/js/all.js";
 import TestimonialsCarousel from "./components/TestimonialsCarousel/TestimonialsCarousel";
 import { testimonials } from "./components/TestimonialsCarousel/Content";
