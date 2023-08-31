@@ -12,8 +12,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center
-
+	justify-content: center;
 }
 
 .carousel {
@@ -63,4 +62,11 @@
 	border-right:15px solid #8ffd2a; 
 	margin-right: 40px;
 	cursor: pointer;
+}
+
+.reviewer-about {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: white;
+    text-transform: uppercase;
 }
