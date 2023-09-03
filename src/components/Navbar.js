@@ -26,8 +26,7 @@ const Navbar = () => {
                 <ul className="navbar-items">
                     <li>Home</li>
                     <li onClick={() => scrollTo("about-me")}>About Me</li>
-                    <li onClick={() => scrollTo("our-services")}>Our Services</li>
-                    <li>My Work</li>
+                    <li onClick={() => scrollTo("our-services")}>Our Portfolio</li>
                     <li className="last">Lets Talk</li>
                 </ul>
                 <div className='toggle-btn' onClick={() => toggled()}>
@@ -37,8 +36,7 @@ const Navbar = () => {
             <div className='dropdown-menu' ref={dropdownRef}>
                 <li>Home</li>
                 <li onClick={() => scrollTo("about-me")}>About Me</li>
-                <li onClick={() => scrollTo("our-services")}>Our Services</li>
-                <li>My Work</li>
+                <li onClick={() => scrollTo("our-services")}>Our Portfolio</li>
                 <li className="last">Lets Talk</li>
             </div>
         </>
