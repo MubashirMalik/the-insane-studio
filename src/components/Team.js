@@ -32,7 +32,7 @@ const TeamCard = ({ name, title, intro, imageSrc, altText }) => {
                         </div>
                     </div>
                     <div className="title">{ title }</div>
-                    <div className="intro">{ intro }</div>
+                    <div className="intro">{ intro.length >= 580 ? `${intro.substring(0, 580)}...` : intro }</div>
                 </div>
             </div>
             <div className="contact-section">
