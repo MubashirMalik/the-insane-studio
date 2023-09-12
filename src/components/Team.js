@@ -17,7 +17,7 @@ const TeamCard = ({ name, title, intro, imageSrc, altText }) => {
                 <div className="about-section-image">
                     <div className="circle"></div>
                     <div className="about-section-image-inner">
-                        <img src={imageSrc} alt={altText} />
+                        <img src={imageSrc} alt={`${name}-the-insane-studio`} />
                     </div>
                 </div>
                 <div className="about-section-text">
@@ -47,22 +47,23 @@ const Team = () => {
     const team = [
         {
             name: 'Ammar Haider',
-            title: 'Founder/CEO - Digital Content Creator',
-            intro: 'Ammar is a very nice guy and very good humble person. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem',
+            title: 'CEO/Founder - Digital Content Creator',
+            intro: 'The Founder of Insane Studios, as the visionary at our creative company, I take immense pride in guiding a team that is wholeheartedly dedicated to providing top-notch digital services. I’m dedicated to providing Digital Content Creation services myself and overlook the creative team and confident we can make a lasting impact in the ever-evolving digital landscape. My role involves nurturing our digital offerings and the continual evolution of our product lineup, all with the singular aim of ensuring that every facet of our enterprise harmoniously resonates with our mission of delivering unrivalled quality and excellence to our cherished clientele.',
             imageSrc: image01,
-            altText: "ammar-haider-the-insane-studio"
         }, 
         { 
             name: 'Usman Khalid',
-            title: 'Co-founder - Game Director',
-            intro: 'Ammar is a very nice guy and very good humble person. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem',
+            title: 'Flutter Dev - Game Developer',
+            intro: `I'm Usman Khalid, a freelance Flutter app developer with a passion for tech and gaming. I specialise in crafting user-friendly mobile applications that combine innovation and functionality. Whether you have a unique app idea or want to enhance an existing project, I'm here to bring your vision to life. Let's collaborate to create captivating and functional mobile apps together. Explore my portfolio and get in touch to discuss your app development needs.`,
             imageSrc: image02,
-            altText: "ali-the-insane-studio"
         },
-        // {
-        //     imageSrc: image03,
-        //     altText: "the-third-guy-the-insane-studio"
-        // }, 
+        {
+            name: 'Ali Salman Khalid',
+            title: '3d Visualizer',
+            intro: `I am a passionate 3D artist. My primary focus is on 3D visualisation, where I specialise in bringing interior and exterior designs to life, making concepts tangible and captivating. I also have a strong interest in 3D modelling and animation.
+            Whether someone is grappling with complex design challenges, seeking to communicate their ideas more effectively, or simply aiming to enhance their projects' visual appeal, I'm here to provide the solutions. Here, at Insane Studio, I'm committed to making the 3D visualisation journey smoother and more successful.`,
+            imageSrc: image03, 
+        },
     ]
 
     return(
