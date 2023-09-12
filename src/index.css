@@ -20,6 +20,11 @@ body {
     background-image: url('./assets/images/Background.jpg');
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .ff-secondary {
     font-family: var(--secondaryFont);
 }
@@ -400,6 +405,12 @@ footer > .contact-info {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.intro {
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-size: 15px;
 }
 /* Team End */
 
