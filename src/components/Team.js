@@ -76,7 +76,7 @@ const Team = () => {
             name: 'Usman Khalid',
             title: 'Flutter Dev - Game Developer',
             intro: `I'm Usman Khalid, a freelance Flutter app developer with a passion for tech and gaming. I specialise in crafting user-friendly mobile applications that combine innovation and functionality. Whether you have a unique app idea or want to enhance an existing project, I'm here to bring your vision to life. Let's collaborate to create captivating and functional mobile apps together. Explore my portfolio and get in touch to discuss your app development needs.`,
-            imageSrc: image02,
+            imageSrc: image03,
             socialLinks: {
                 linkedIn: 'https://www.linkedin.com/in/usman-khalid16/',
                 gitHub: 'https://github.com/Usmankhalid16',
@@ -88,7 +88,7 @@ const Team = () => {
             title: '3d Visualizer',
             intro: `I am a passionate 3D artist. My primary focus is on 3D visualisation, where I specialise in bringing interior and exterior designs to life, making concepts tangible and captivating. I also have a strong interest in 3D modelling and animation.
             Whether someone is grappling with complex design challenges, seeking to communicate their ideas more effectively, or simply aiming to enhance their projects' visual appeal, I'm here to provide the solutions. Here, at Insane Studio, I'm committed to making the 3D visualisation journey smoother and more successful.`,
-            imageSrc: image03, 
+            imageSrc: image02, 
             socialLinks: {
                 linkedIn: 'https://www.linkedin.com/in/ali-salman-khalid-838531288/',
                 behance: 'https://www.behance.net/alisalmankhalid'
