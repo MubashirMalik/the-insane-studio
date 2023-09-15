@@ -70,3 +70,8 @@
     color: white;
     text-transform: uppercase;
 }
+
+.testimonial-message {
+    color: white;
+    line-height: 23px;
+}

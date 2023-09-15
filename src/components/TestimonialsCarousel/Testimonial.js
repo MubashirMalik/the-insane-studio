@@ -16,7 +16,7 @@ const Testimonial = ({ item }) => {
                 </div>
             </div>
             <div>
-                <p style={{ color: "white" }}>{item.message}</p>
+                <p className='testimonial-message'>{item.message}</p>
             </div>
         </div>
     );
