@@ -13,18 +13,16 @@ const Service = ({ service }) => {
 
 }
 
-
-
 const Services = () =>{
     const serviceData = [
         'Graphics Design',
         'Video Editing',
         'Product Photography',
-        'Sound Engineer',
-        'Motion Graphics',
-        'Web Design',
+        'Product Videography',
         'Web Development',
-        'Product Photography'
+        'Web Design',
+        'Flutter Development',
+        '3D Visualization'
     ]
     
     return (
