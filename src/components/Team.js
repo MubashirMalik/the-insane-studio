@@ -70,6 +70,8 @@ const Team = () => {
             intro: 'The Founder of Insane Studios, as the visionary at our creative company, I take immense pride in guiding a team that is wholeheartedly dedicated to providing top-notch digital services. I’m dedicated to providing Digital Content Creation services myself and overlook the creative team and confident we can make a lasting impact in the ever-evolving digital landscape. My role involves nurturing our digital offerings and the continual evolution of our product lineup, all with the singular aim of ensuring that every facet of our enterprise harmoniously resonates with our mission of delivering unrivalled quality and excellence to our cherished clientele.',
             imageSrc: image01,
             socialLinks: {
+                linkedIn: 'https://www.linkedin.com/in/editing-designer-expert/',
+                behance: 'https://www.behance.net/ammarhaiderofficial'
             }
         }, 
         { 
