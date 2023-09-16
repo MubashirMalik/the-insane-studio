@@ -3,7 +3,7 @@ import Markhor from "../../assets/images/Markhor-Logo.jpg";
 
 export const testimonials = [
     {
-        message: `I highly recommend Ammar Haider, as a reliable and skilled graphic designer. I have been using his services for over 4 years now, and I have consistently been impressed by his creativity and attention to detail.
+        message: `I highly recommend Insane Studios, as a reliable and skilled graphic designer. I have been using his services for over 4 years now, and I have consistently been impressed by his creativity and attention to detail.
 
         Ammar Haider is a true professional and always strives to understand his client's vision and goals. He is highly knowledgeable about various design software and techniques, which enables him to create visually stunning designs that perfectly communicate his clients' messages. He is always up-to-date with the latest design trends and incorporates them into his work, ensuring that his clients always have a fresh and modern look.
         
