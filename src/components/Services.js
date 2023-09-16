@@ -2,11 +2,9 @@
 
 
 const Service = ({ service }) => {
-
     return(
         <div className="outer-shadow-box">
-            <div className="service">
-                { service }
+            <div className="service" dangerouslySetInnerHTML={{ __html: service.split(' ').join('<br />') }}>
             </div>
         </div>
     )
