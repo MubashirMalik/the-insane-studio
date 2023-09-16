@@ -267,7 +267,9 @@ button {
     border: 2px solid var(--purpleColor);
     border-radius: 30px;
     background-color: var(--backgroundColor);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    justify-content: center;
+    text-align: center;
 }
 
 .service:hover {
