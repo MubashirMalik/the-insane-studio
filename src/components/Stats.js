@@ -3,9 +3,9 @@ import CountUp from "react-countup"
 const Stats = () => {
     return (
         <div className="stats">
-            <div><span className="c-purple">Clients</span> <CountUp end={100} duration={5} />+ Satisfied</div>
-            <div><span className="c-purple">Projects</span> <CountUp end={400} duration={5} />+ Delivered</div> 
-            <div><span className="c-purple">Reviews</span> <CountUp end={100} duration={5} />+</div>
+            <div><div className="c-purple title">Clients</div> <CountUp end={100} duration={5} suffix="+" />Satisfied</div>
+            <div><div className="c-purple title">Projects</div> <CountUp end={400} duration={5} suffix="+" />Delivered</div> 
+            <div><div className="c-purple title">Reviews</div> <CountUp end={100} duration={5} suffix="+" /></div>
         </div>
     )
 }

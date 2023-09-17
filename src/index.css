@@ -123,7 +123,7 @@ button {
 /* Stats */
 .stats {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 600;
@@ -133,8 +133,14 @@ button {
     padding: 10px;
     color: white;
     margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+.stats > div {
+    display: flex;
+    column-gap: 15px;
+}
 /* HERO */
 
 .hero {
@@ -145,10 +151,14 @@ button {
     padding-top: 40px;
     padding-bottom: 50px;
     column-gap: 20px;
+    text-align: center;
 }
 
 .hero-header {
-    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-header > h1 {
@@ -156,8 +166,8 @@ button {
     font-family: var(--secondaryFont);
     color: white;
     font-size: 60px;
-    font-weight: 500;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -274,7 +284,9 @@ button {
 
 .service:hover {
     cursor: pointer;
-    height: 174px; 
+    transform: translateY(24px);
+    background-color: black;
+    color: white;
 }
 
 /* Footer */

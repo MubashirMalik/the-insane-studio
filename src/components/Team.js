@@ -27,7 +27,9 @@ const TeamCard = ({ name, title, intro, imageSrc, socialLinks }) => {
                         <div className="social-icons">
                             { socialLinks.linkedIn && 
                                 <div className="icon">
-                                    <Link to={socialLinks.linkedIn}><i className="fa-brands fa-linkedin-in"></i></Link>
+                                    <Link to={socialLinks.linkedIn} target="_blank" rel="noopener noreferrer">
+                                        <i className="fa-brands fa-linkedin-in"></i>
+                                    </Link>
                                 </div> 
                             }
                             { socialLinks.instagram && <div className="icon"><i className="fa-brands fa-instagram"></i></div> }
@@ -35,17 +37,23 @@ const TeamCard = ({ name, title, intro, imageSrc, socialLinks }) => {
                             { socialLinks.dribble && <div className="icon"><i className="fa-brands fa-square-dribbble"></i></div> }
                             { socialLinks.behance && 
                                 <div className="icon">
-                                    <Link to={socialLinks.behance}><i className="fa-brands fa-behance"></i></Link>
+                                    <Link to={socialLinks.behance} target="_blank" rel="noopener noreferrer">
+                                        <i className="fa-brands fa-behance"></i>
+                                    </Link>
                                 </div> }
                             { socialLinks.gitHub && 
                                 <div className="icon">
-                                    <Link to={socialLinks.gitHub}><i className="fa-brands fa-github"></i></Link>
+                                    <Link to={socialLinks.gitHub} target="_blank" rel="noopener noreferrer">
+                                        <i className="fa-brands fa-github"></i>
+                                    </Link>
                                 </div> 
                             }
                             { 
                                 socialLinks.itchIo && 
                                 <div className="icon">
-                                   <Link to={socialLinks.itchIo}><i className="fa-brands fa-itch-io"></i></Link> 
+                                   <Link to={socialLinks.itchIo} target="_blank" rel="noopener noreferrer">
+                                        <i className="fa-brands fa-itch-io"></i>
+                                    </Link> 
                                 </div> 
                             }
                         </div>
