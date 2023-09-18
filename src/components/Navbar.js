@@ -35,7 +35,7 @@ const Navbar = () => {
             </div>
             <div className='dropdown-menu' ref={dropdownRef}>
                 <li>Home</li>
-                <li onClick={() => scrollTo("about-me")}>About Me</li>
+                <li onClick={() => scrollTo("about-me")}>About Us</li>
                 <li onClick={() => scrollTo("our-services")}>Our Portfolio</li>
                 <li className="last">Lets Talk</li>
             </div>
