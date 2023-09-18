@@ -96,8 +96,7 @@ const Team = () => {
         {
             name: 'Ali Salman Khalid',
             title: '3d Visualizer',
-            intro: [`I am a passionate 3D artist. My primary focus is on 3D visualization, where I specialize in bringing interior and exterior designs to life, making concepts tangible and captivating. I also have a strong interest in 3D modelling and animation.`,
-            `Whether someone is grappling with complex design challenges, seeking to communicate their ideas more effectively, or simply aiming to enhance their projects' visual appeal, I'm here to provide the solutions. Here, at Insane Studio, I'm committed to making the 3D visualization journey smoother and more successful.`],
+            intro: [`I am a passionate 3D artist. My primary focus is on 3D visualization, where I specialize in bringing interior and exterior designs to life, making concepts tangible and captivating. I also have a strong interest in 3D modelling and animation. Whether someone is grappling with complex design challenges, seeking to communicate their ideas more effectively, or simply aiming to enhance their projects' visual appeal, I'm here to provide the solutions. Here, at Insane Studio, I'm committed to making the 3D visualization journey smoother and more successful.`],
             imageSrc: image02, 
             socialLinks: {
                 linkedIn: 'https://www.linkedin.com/in/ali-salman-khalid-838531288/',
