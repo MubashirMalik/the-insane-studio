@@ -144,7 +144,6 @@ button {
 /* HERO */
 
 .hero {
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +151,7 @@ button {
     padding-bottom: 50px;
     column-gap: 20px;
     text-align: center;
+    height: 600px;
 }
 
 .hero-header {
@@ -159,6 +159,22 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1; /* Places the video behind other content */
 }
 
 .hero-header > h1 {
