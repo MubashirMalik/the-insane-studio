@@ -301,7 +301,7 @@ button {
 .service:hover {
     cursor: pointer;
     transform: translateY(24px);
-    background-color: black;
+    background-color: var(--purpleColor);
     color: white;
 }
 
