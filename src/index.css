@@ -150,7 +150,7 @@ button {
     padding-top: 40px;
     padding-bottom: 50px;
     column-gap: 20px;
-    text-align: center;
+    /*text-align: center;*/
     height: 600px;
 }
 
