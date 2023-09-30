@@ -277,8 +277,9 @@ button {
 
 .outer-shadow-box {
     height: 174px;
+    width: 230px;
     border: 2px solid var(--purpleColor);
-    border-radius: 28px;
+    border-radius: 32px;
     background-color: black;
 }
 
