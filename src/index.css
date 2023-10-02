@@ -143,6 +143,25 @@ button {
 }
 /* HERO */
 
+.animation-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom-up-text {
+    position: relative;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: bottomUp 1.5s ease-in-out forwards;
+}
+
+@keyframes bottomUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero {
     display: flex;
     justify-content: center;
