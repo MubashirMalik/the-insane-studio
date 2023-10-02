@@ -102,8 +102,29 @@ button {
 }
 
 .navbar-items > li {
+    transition: all 1s ease-in;
     margin-left: 1.4rem;
     cursor: pointer!important;
+}
+
+.navbar-items > li {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-items > li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid var(--purpleColor);
+    transition: 0.5s;
+}
+
+.navbar-items > li:hover:after {
+    width: 100%;
 }
 
 .navbar-items li:first-child {
@@ -135,6 +156,7 @@ button {
     margin-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 .stats > div {
@@ -151,8 +173,8 @@ button {
 .bottom-up-text {
     position: relative;
     opacity: 0;
-    transform: translateY(100%);
-    animation: bottomUp 1.5s ease-in-out forwards;
+    transform: translateY(30%);
+    animation: bottomUp 1s ease-in-out forwards;
 }
 
 @keyframes bottomUp {

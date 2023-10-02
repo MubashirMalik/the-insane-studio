@@ -1,11 +1,17 @@
+import { Link } from "react-router-dom"
+
  
 
 
 const Service = ({ service }) => {
     return(
         <div className="outer-shadow-box">
-            <div className="service" dangerouslySetInnerHTML={{ __html: service.split(' ').join('<br />') }}>
-            </div>
+            <Link to={service.link} target="_blank" rel="noopener noreferrer">
+                <div 
+                    className="service" dangerouslySetInnerHTML={{ __html: service.name.split(' ').join('<br />') }}
+                >
+                </div>
+            </Link>
         </div>
     )
 
@@ -13,14 +19,14 @@ const Service = ({ service }) => {
 
 const Services = () =>{
     const serviceData = [
-        'Graphics Design',
-        'Video Editing',
-        'Product Photography',
-        'Product Videography',
-        'Web Development',
-        'Web Design',
-        'Flutter Development',
-        '3D Visualization'
+        { name: 'Graphics Design', link: 'https://www.ammar.com'},
+        { name: 'Video Editing', link: 'https://www.youtube.com'},
+        { name: 'Product Photography', link: ''},
+        { name: 'Product Videography', link: ''},
+        { name: 'Web Development', link: ''},
+        { name: 'Web Design', link: ''},
+        { name: 'Flutter Development', link: ''},
+        { name: '3D Visualization', link: ''},
     ]
     
     return (

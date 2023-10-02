@@ -1,20 +1,8 @@
+import { useScrollContext } from '../App';
 import logo from '../assets/images/logo.png'
-import { useRef, useState } from 'react';
 
 const Navbar = () => {
-    const [toggleState, setToggleState] = useState(false)
-    const dropdownRef = useRef()
-
-    const scrollTo = id => {
-        const section = document.getElementById( id );
-        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-    }
-
-    const toggled = () => {
-        setToggleState(prevToggleState => !prevToggleState)
-        dropdownRef.current.classList.toggle('open')
-    }
-
+    const { dropdownRef, toggled, scrollTo, toggleState } = useScrollContext()
     return (
         <>
             <div className="navbar">
