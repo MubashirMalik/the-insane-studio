@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 const Testimonial = ({ item }) => {
+    const [isReadMoreEnabled, setIsReadMoreEnabled] = useState(false)
+
     return (
         <div style={{ borderRadius: 50, backgroundColor: "rgba(0, 0, 0, 0.5)", padding: 50 }}>
             <div style={{ padding: 10, display: "flex" }}>
@@ -16,7 +18,20 @@ const Testimonial = ({ item }) => {
                 </div>
             </div>
             <div>
-                <p className='testimonial-message'>{item.message}</p>
+                <p className='testimonial-message'>
+                    { isReadMoreEnabled ? item.message : `${item.message.substring(0, 520)}...` }
+                    { item.message.length > 520 && !isReadMoreEnabled && 
+                        <>
+                            <br />
+                            <button
+                                style={{ padding: '4px', width: '150px', float: 'right'}}
+                                onClick={() => setIsReadMoreEnabled(true)}
+                            >
+                                Read more..
+                            </button>
+                        </>
+                    }
+                </p>
             </div>
         </div>
     );
