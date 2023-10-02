@@ -148,10 +148,10 @@ button {
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     column-gap: 20px;
     /*text-align: center;*/
-    height: 600px;
+    height: 460px;
 }
 
 .hero-header {
@@ -163,7 +163,7 @@ button {
 .video-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -263,6 +263,10 @@ button {
 }
 
 /* Services */
+#our-services {
+    margin-top: 30px;
+}
+
 .services {
     display: flex;
     column-gap: 30px;
