@@ -65,6 +65,11 @@ const TeamCard = ({ name, title, intro, imageSrc, socialLinks }) => {
             <div className="contact-section">
                 Schedule meet
             </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     )
 }

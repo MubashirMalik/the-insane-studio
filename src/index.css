@@ -113,7 +113,7 @@ button {
     padding-bottom: 5px;
 }
 
-.navbar-items > li:after {
+.navbar-items > li:not(:last-child):after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -123,7 +123,7 @@ button {
     transition: 0.5s;
 }
 
-.navbar-items > li:hover:after {
+.navbar-items > li:not(:last-child):hover:after {
     width: 100%;
 }
 
@@ -497,6 +497,45 @@ footer > .contact-info {
     letter-spacing: 0.1px;
     font-size: 15px;
 }
+
+.arrow {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--limeGreenColor);
+    border-right: 5px solid var(--limeGreenColor);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 /* Team End */
 
 .dropdown-menu{
