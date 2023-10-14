@@ -528,6 +528,10 @@ footer > .contact-info {
     font-weight: bold;
 }
 
+.contact-section:hover {
+    cursor: pointer;
+}
+
 .intro {
     line-height: 20px;
     letter-spacing: 0.1px;
