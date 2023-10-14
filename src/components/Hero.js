@@ -14,7 +14,7 @@ const Hero = () => {
                 <button 
                     onClick={() => scrollTo("our-services")}
                 >
-                    Explore Work<i class="fa-solid fa-arrow-right"></i>
+                    Explore Work<i className="fa-solid fa-arrow-right blink"></i>
                 </button>
             </div>
         </div>
