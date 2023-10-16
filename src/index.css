@@ -496,7 +496,7 @@ footer > .contact-info {
     mask-size: 800%;
     -webkit-mask-position: 0;
     mask-position: 0;
-    animation: maskAnimation 1s linear infinite; /* Adjust the duration as needed */
+    animation: maskAnimation 4s linear infinite; /* Adjust the duration as needed */
 }
 
 @keyframes maskAnimation {
